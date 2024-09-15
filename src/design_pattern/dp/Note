@@ -1,0 +1,64 @@
+Design Pattern in Java
+
+Design patterns
+- Design patterns are typical solutions to common problems in software design. 
+- Each pattern is like a blueprint that you can customize to solve a particular design problem in your code.
+
+Benefits of patterns
+- Patterns are a toolkit of solutions to common problems in software design. 
+- They define a common language that helps your team communicate more efficiently.
+
+Classification of patterns
+- Design patterns differ by their complexity, level of detail and scale of applicability to the entire system being designed. 
+- I like the analogy to road construction: you can make an intersection safer by either installing some traffic lights or building an entire multi-level interchange with underground passages for pedestrians.
+- The most basic and low-level patterns are often called idioms. 
+- They usually apply only to a single programming language.
+- The most universal and high-level patterns are architectural patterns. 
+- Developers can implement these patterns in virtually any language. 
+- Unlike other patterns, they can be used to design the architecture of an entire application.
+- In addition, all patterns can be categorized by their intent, or purpose. This book covers three main groups of patterns:
+	- Creational patterns : 
+		- provide object creation mechanisms that increase flexibility and reuse of existing code.
+	- Structural patterns : 
+		- explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
+	- Behavioral patterns : 
+		- take care of effective communication and the assignment of responsibilities between objects.
+
+Creational Patterns 
+1. Factory
+	1. Factory Method
+	   Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+	2. Abstract Factory (Factory of Factory F(F) )
+	   Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+2. Builder
+	1. Builder is a creational design pattern that lets you construct complex objects step by step. 
+	2. The pattern allows you to produce different types and representations of an object using the same construction code.
+3. Prototype
+	1. Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+4. Singleton 
+	1. Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+Structural Patterns 
+1. Adapter
+2. Bridge
+3. Composite
+4. Decorator 
+	1. Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+	2. Ex: Pizza bill, Coffee bill
+5. Facade
+6. Flyweight
+7. Proxy
+
+Behavioral Patterns
+1. Chain of Responsibility
+2. Command
+3. Iterator
+4. Mediator
+5. Memento
+6. Observer
+	1. Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+	2. ex: Product availability notify me
+7. State
+8. Strategy
+	1. Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+	2. Ex: There are different type vehicles, so we need Drive Strategy to decide which kind of vehicles we need

@@ -1,0 +1,31 @@
+S :- Single Responsibility Principle (SRP)
+	Def : A class should have only one reason to change, meaning it should have only one responsibility or job.
+	Ex: A class should have single responsibility like impl class or save/repos class
+	The SRP aims to separate concerns within a program. If a class has multiple responsibilities, it becomes more difficult to change and maintain. Changes to one responsibility might affect the other responsibilities.
+
+
+```
+// Before applying SRP
+class Employee {
+    public void calculatePay() {
+        // Calculate pay logic
+    }
+
+    public void save() {
+        // Save employee to database logic
+    }
+}
+
+// After applying SRP
+class Employee {
+    public void calculatePay() {
+        // Calculate pay logic
+    }
+}
+
+class EmployeeRepository {
+    public void save(Employee employee) {
+        // Save employee to database logic
+    }
+}
+```

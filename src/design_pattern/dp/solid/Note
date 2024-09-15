@@ -1,0 +1,18 @@
+SOLID in Java
+
+S :- Single Responsibility Principle (SRP)
+	A class should have single responsibility like impl class or save/repos class
+O :- Open/Closed Principle (OCP)
+	- (Open for extension but closed for modification)
+	- If you are adding new functionality to impl class it should not affected existing code.
+	- So make interface and implement functionality, 
+L :- Liskov Substitution Principle (LSP)
+	- (If Class B is subtype of Class A, then we should be able to replace object of A with B without breaking the behaviour of the program)
+	- Subclass should extend the capability of parent class not narrow it down
+	- Without changing functionality of superclass, By adding different features of subclass
+I :- Interface Segregation Principle (ISP)
+	- (Interfaces should be such, that client should implement unnecessary functions they do not need)
+	- Split interface like SRP, So interfaces will be small. 
+D :- Dependency Inversion Principle (DIP)
+	- (Class should depend on interfaces rather than concrete class)
+	- Functionality should be Decouple not tightly couple, By use of interface and abstraction

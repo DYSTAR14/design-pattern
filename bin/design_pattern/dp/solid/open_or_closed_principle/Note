@@ -1,0 +1,47 @@
+O :- Open/Closed Principle (OCP)
+	Def : Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
+	Ex: If you are adding new functionality to impl class it should not affected existing code.
+	The OCP states that you should be able to add new functionality to a class without changing its existing code. This is usually achieved through inheritance, interfaces, and abstract classes.
+```
+// Before applying OCP
+class Rectangle {
+    public double width;
+    public double height;
+}
+
+class AreaCalculator {
+    public double calculateRectangleArea(Rectangle rectangle) {
+        return rectangle.width * rectangle.height;
+    }
+}
+
+// After applying OCP
+interface Shape {
+    double calculateArea();
+}
+
+class Rectangle implements Shape {
+    public double width;
+    public double height;
+
+    @Override
+    public double calculateArea() {
+        return width * height;
+    }
+}
+
+class Circle implements Shape {
+    public double radius;
+
+    @Override
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+class AreaCalculator {
+    public double calculateArea(Shape shape) {
+        return shape.calculateArea();
+    }
+}
+```

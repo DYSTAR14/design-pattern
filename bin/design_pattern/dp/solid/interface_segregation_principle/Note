@@ -1,0 +1,32 @@
+Interface Segregation Principle (ISP)
+	Def : Clients should not be forced to depend on methods they do not use. This means larger interfaces should be split into smaller, more specific ones so that clients only need to know about the methods that are of interest to them.
+	Ex : Split interface like SRP, So interfaces will be small. 
+	The ISP aims to keep interfaces small and specific to avoid forcing classes to implement methods they do not need.
+```
+// Before applying ISP
+interface Worker {
+    void work();
+    void eat();
+}
+
+// After applying ISP
+interface Workable {
+    void work();
+}
+
+interface Eatable {
+    void eat();
+}
+
+class WorkerImpl implements Workable, Eatable {
+    @Override
+    public void work() {
+        // Work logic
+    }
+
+    @Override
+    public void eat() {
+        // Eat logic
+    }
+}
+```
